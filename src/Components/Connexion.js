@@ -62,20 +62,18 @@ export default function SignInSide() {
             <Box component="form" noValidate onSubmit={handleSubmit} sx={{ mt: 1 }}>
               <TextField
                 margin="normal"
-                required
                 fullWidth
                 id="email"
-                label="Adresse courriel"
+                label="John.Molina@gmail.com"
                 name="email"
                 autoComplete="email"
                 autoFocus
               />
               <TextField
                 margin="normal"
-                required
                 fullWidth
                 name="password"
-                label="Mot de passe"
+                label="nMJmfuk"
                 type="password"
                 id="password"
                 autoComplete="current-password"
@@ -86,7 +84,9 @@ export default function SignInSide() {
                 variant="contained"
                 sx={{ mt: 3, mb: 2 }}
               >
-                Connexion
+                <Link href="./Components/Dashboard" variant="Dashboard">
+                  Connexion
+                  </Link>
               </Button>
               <Grid container>
                 <Grid item xs>

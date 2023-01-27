@@ -69,7 +69,9 @@ const Dashboard = () => {
               fullWidth
               sx={{ mt: 3, mb: 2 }}
             >
+            <Link href="./Components/Dashboard/CreerCompte" variant="CreerCompte">
               Créer un compte
+            </Link>
             </Button>
             <Button 
               type="submit"

@@ -2,6 +2,7 @@ import { useState, useEffect, useContext } from 'react'
 import { useNavigate, useParams } from 'react-router-dom'
 import axios from 'axios'
 import CategoriesContext from '../Context'
+import Button from '@mui/material/Button';
 
 const TicketPage = ({ editMode }) => {
 
@@ -179,7 +180,20 @@ const TicketPage = ({ editMode }) => {
               </>
             )}
 
-            <input type="submit" />
+          <Button 
+            type="submit"
+            variant="contained"
+            sx={{ mt: 3, mb: 2 }}
+            >
+              Soumettre
+          </Button>
+            <Button
+              type="submit"
+              variant="contained"
+              sx={{ mt: 3, mb: 2 }}
+              >
+                Consulter
+            </Button>
           </section>
 
           <section>
