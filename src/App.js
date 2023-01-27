@@ -1,16 +1,15 @@
 import './App.css';
+import { BrowserRouter, Route, Routes } from "react-router-dom";
 import Connexion from './Components/Connexion';
-import Inscription from './Components/Inscription';
-import Objetsperdus from './Components/ObjetsPerdus';
-
 
 function App() {
   return (
     <div className="eventask">
-      <Connexion/>
-      <Inscription/>
-      <Objetsperdus/>
-      
+      <BrowserRouter>
+        <Routes>
+         <Route path='/' element={<Connexion/>}/>
+        </Routes>
+      </BrowserRouter>
     </div>
   );
 }
