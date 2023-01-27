@@ -79,16 +79,17 @@ export default function SignInSide() {
                 autoComplete="current-password"
               />
               
-              <Link href="./Dashboard" variant="Dashboard">
+              
               <Button
                 type="submit"
                 fullWidth
                 variant="contained"
                 sx={{ mt: 3, mb: 2 }}
               >
-                Connexion
+                <Link href="./Dashboard" variant="Dashboard">
+                  Connexion
+                  </Link>
               </Button>
-              </Link>
               
               <Grid container>
                 <Grid item xs>
