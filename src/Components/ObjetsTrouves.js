@@ -8,7 +8,7 @@ export default function AddressForm() {
   return (
     <React.Fragment>
       <Typography variant="h6" gutterBottom>
-        Formulaire Objet Perdu
+        Formulaire Objet Trouvé
       </Typography>
       <Grid container spacing={3}>
         <Grid item xs={12} sm={6}>
@@ -24,22 +24,6 @@ export default function AddressForm() {
             id="address1"
             name="address1"
             label="Heure"
-            fullWidth
-          />
-        </Grid>
-        <Grid item xs={12} sm={6}>
-          <TextField
-            id="city"
-            name="city"
-            label="Nom de l'utilisateur"
-            fullWidth
-          />
-        </Grid>
-        <Grid item xs={12} sm={6}>
-          <TextField
-            id="city"
-            name="city"
-            label="Téléphone de l'utilisateur"
             fullWidth
           />
         </Grid>
@@ -60,7 +44,7 @@ export default function AddressForm() {
           />
         </Grid>
       </Grid>
-      <Button
+      <Button 
               type="submit"
               variant="contained"
               sx={{ mt: 3, mb: 2 }}
