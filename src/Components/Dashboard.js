@@ -4,6 +4,7 @@ import axios from 'axios'
 import CategoriesContext from '../Context'
 import Button from '@mui/material/Button';
 import Box from '@mui/material/Box';
+import Link from '@mui/material/Link';
 
 const Dashboard = () => {
   const [tickets, setTickets] = useState(null)
@@ -45,7 +46,7 @@ const Dashboard = () => {
 
   return (
     <div className="dashboard">
-      <h1>My Projects</h1>
+      <h1>Tableau de bord</h1>
       <div className="ticket-container">
         {tickets &&
           uniqueCategories?.map((uniqueCategory, categoryIndex) => (
@@ -62,7 +63,44 @@ const Dashboard = () => {
                 ))}
             </div>
           ))}
-        
+            <Button
+              type="submit"
+              variant="contained"
+              fullWidth
+              sx={{ mt: 3, mb: 2 }}
+            >
+              Créer un compte
+            </Button>
+            <Button 
+              type="submit"
+              variant="contained"
+              fullWidth
+              sx={{ mt: 3, mb: 2 }}
+            >
+             <Link href="./Dashboard/ticket" variant="ticket">
+                Créer une tâche
+              </Link>
+            </Button>
+            <Button
+              type="submit"
+              variant="contained"
+              fullWidth
+              sx={{ mt: 3, mb: 2 }}
+            >
+              <Link href="./Components/Dashboard/ObjetsPerdus" variant="ObjetsPerdus">
+                Remplir un formulaire d'objet perdu
+              </Link>
+            </Button>
+            <Button
+              type="submit"
+              variant="contained"
+              fullWidth
+              sx={{ mt: 3, mb: 2 }}
+            >
+              <Link href="./Components/Dashboard/ObjetsTrouves" variant="ObjetsTrouves">
+                Remplir un formulaire d'objet trouvé
+              </Link>
+            </Button>
       </div>
     </div>
   )

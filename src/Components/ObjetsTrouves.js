@@ -43,21 +43,21 @@ export default function AddressForm() {
             fullWidth
           />
         </Grid>
-      </Grid>
-      <Button 
-              type="submit"
-              variant="contained"
-              sx={{ mt: 3, mb: 2 }}
-            >
-              Soumettre
-            </Button>
-            <Button
-              type="submit"
-              variant="contained"
-              sx={{ mt: 3, mb: 2 }}
-            >
-              Consulter
-            </Button>
+        </Grid>
+        <Button 
+          type="submit"
+          variant="contained"
+          sx={{ mt: 3, mb: 2 }}
+          >
+            Soumettre
+        </Button>
+        <Button
+          type="submit"
+          variant="contained"
+          sx={{ mt: 3, mb: 2 }}
+          >
+            Consulter
+        </Button>
     </React.Fragment>
   );
 }
